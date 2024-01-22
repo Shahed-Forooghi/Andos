@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Homa';
+  src: url(bhoma/BHoma.eot);
+  src: url(bhoma/BHoma.eot?#iefix) format('embedded-opentype'),
+       url(bhoma/BHoma.otf) format('otf'),
+       url(bhoma/BHoma.svg#BHoma) format('svg'),
+       url(bhoma/BHoma.ttf) format('truetype'),
+       url(bhoma/BHoma.woff) format('woff'),
+       url(bhoma/BHoma.woff2) format('woff2');
+
+     }
+@font-face{
+     font-family: 'koodak';
+     src: url(bkoodak/BKoodak.com.eot);
+     src: url(bkoodak/BKoodak.com.eot?#iefix) format('embedded-opentype'),
+          url(bkoodak/BKoodak.com.otf) format('otf'),
+          url(bkoodak/BKoodak.com.svg#BKoodak.com) format('svg'),
+          url(bkoodak/BKoodak.com.ttf) format('truetype'),
+          url(bkoodak/BKoodak.com.woff) format('woff'),
+          url(bkoodak/BKoodak.com.woff2) format('woff2');
+     }
+@font-face{
+     font-family: 'iran';
+     src: url(iranfont/IranNastaliq.eot);
+     src: url(iranfont/IranNastaliq.eot?#iefix) format('embedded-opentype'),
+          url(iranfont/IranNastaliq.otf) format('otf'),
+          url(iranfont/IranNastaliq.svg#IranNastaliq) format('svg'),
+          url(iranfont/IranNastaliq.ttf) format('truetype'),
+          url(iranfont/IranNastaliq.woff) format('woff'),
+          url(iranfont/IranNastaliq.woff2) format('woff2');
+     }

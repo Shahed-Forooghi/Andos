@@ -1,0 +1,3176 @@
+@import url( Fonts/font.css );
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "koodak";
+    
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(360deg,#160436 80% , #ff00e6);
+    background-repeat: no-repeat;
+    
+}
+
+#body2{
+    /* بادیه صفحه های دیگر سایت ... */
+    /* height: 1900px; */
+    background-image: none;
+    background-color: #160436;
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #cfd0bf;
+    direction: rtl;
+}
+/* بک گراند هدر سایت */
+header{
+    background-image: url(pic/header.jpg);
+    background-size: cover;
+    background-position: 0px -350px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+/* منو در بالای هدر سایت */
+#menu{
+    display: flex;
+    justify-content: space-around ;
+    direction: ltr;
+}
+
+/* لوکوی سابت در گوشه سمت راست هدر بالا */
+#logo{
+    width: 120px;
+    height: 55px;
+    margin-top: 10px;
+    background-color: #323a50;
+}
+
+#logo a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* لینک های منو در هدر */
+#header-nav{
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: #fffcfc44; */
+    direction: ltr;
+}
+/*  لینک درخواست اپ در هدر  */
+#sign{
+    width: 94px;
+    height: 50px;
+    text-decoration: none;
+    font-family: "koodak";
+    margin-left: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: none;
+    background: transparent;
+    box-shadow: transparent;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sign:hover{
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff,
+                0 0 20px #008cff,
+                0 0 50px #008cff,
+                0 0 100px #008cff;
+}
+
+.burger , .dropdown{
+  display: none;
+}
+
+
+/* اینپوت سرچ در کنار لینک عضویت */
+#search input[type=search]{
+    width: 250px;
+    height: 32px;
+    border-radius: 15px;
+    background-image: url(pic/search.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 5px;
+    background-color: #fff;
+    direction: rtl;
+    color: #000;
+    border: unset;
+    font-family: "koodak";
+    font-size: large;
+    padding: 0px 15px;
+}
+#search input::placeholder{
+    color: #1244;
+    float: right;
+    margin-top: 2px;
+    margin-right: 10px;
+    font-size: large;
+}
+/* لینک های وسط هدر  */
+
+#header-list {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    direction: rtl;
+}
+#header-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    padding: 0.1em 0.50em;
+    border-radius: 0.3em;
+    font-size: 12px;
+}
+
+#header-list li a { 
+    font-family: "koodak";
+    font-size: 15px;
+    color: #cfd0bf;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    background-color: #23197e;
+    border-radius: 0.2em;
+    border: 0.08em solid #cfd0bf;
+    box-shadow: 0 0.4em 0.1em 0.019em #cfd0bf;
+}
+#header-list li a:hover{
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+}
+#header-list li a:not(hover){
+    transition: all 1s;
+}
+
+/* آندوس به روز ترین مرجع اندروید و آی او اس */
+h1{
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-left: 420px;
+    padding: 15px;
+    margin-top: 70px;
+    background-color: #231979;
+    border: solid #ffffff;
+    border-radius: 7px;
+    word-spacing: 5px;
+    letter-spacing: 3;
+}
+
+/* دیزاین اسلایدر */
+.slider {
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .slider input[type="radio"] {
+    display: none;
+  }
+  
+  .slider label {
+    flex: 1;
+    transition: margin-left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .slider input[type="radio"]:checked + label {
+    margin-left: 0;
+    opacity: 1;
+  }
+  
+  .slider input[type="radio"]:not(:checked) + label {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  
+  .slider img {
+     width: 100%;
+     /* height: 100%; */
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 90% ;
+    transform: translateY(-50%);
+    margin-left: 700px;
+  }
+  
+  .slider-controls label {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    opacity: 0.5;
+    transition:  0.5s ease-in-out;
+  }
+  
+  .slider-controls label:hover {
+    opacity: 1;
+}
+
+
+/* از اینجا به بعد محتوای اصلی سابت می باشد */
+main{
+    width: 75%;
+    /* height: 3000px; */
+    background-image: linear-gradient(360deg ,#160436 85%, #88018f  );
+    margin: auto;
+    margin-bottom: 30px;
+    /* border: solid brown; */
+}
+/* لینک بازی ها و برنامه ها در کنار صفحه با پوزیشن استیکی */
+#menu-side{
+    width: 190px;
+    height: 2300px;
+    position: absolute;
+    right: 0;
+    float: right;
+}
+
+#menu-side ul{
+    width: 190px;
+    height: 200px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    list-style-type: none;    
+}
+#menu-side ul li{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid #2196f3 1px;
+    /* margin-bottom: 20px; */
+    transition: 0.3s;
+}
+#menu-side ul li:hover{
+    transition: 0.5s;
+    background-color: #ca36d444;
+}
+
+#menu-side ul li a{
+    width: 100%;
+    height: 100%;
+    color: #cfd0bf;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#menu-side ul li a img{
+    height: 50%;
+    width: 40%;
+    display: block;
+}
+
+
+/* لینک های بازی های پیشنهادی و آخرین بازی های به روز شده و بازی های رونمایی شده */
+#main-nav1{
+    width: 100%;
+    height: 37px;
+    border-bottom: solid 1px #cfd0bf;
+    
+}
+#main-nav1 div{
+    width: 50% ;
+    float: right;
+    margin-right: 5px;
+}
+
+#main-nav1 div ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    direction: rtl;
+}
+
+#main-nav1 div ul a{
+    color: #cfd0bf;
+    text-decoration: none;
+    font-size: 20px;
+}
+#main-nav1 div ul li:first-child{
+    border-bottom: solid #2196f3 2px;
+}
+/* محتوای اصلی سایت در قسمت بازی های پیشنهادی  */
+#bazi-pishnehadi{
+    width: 98%;
+    margin: auto;
+    border: solid 1px #808080;
+    border-radius: 7px;
+    border-top: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+/* کارت های معرفی بازی ها  */
+
+.for-hover{
+  width: 250px ;
+  height: 300px;
+  margin: 10px;
+  /* border: solid red 2px; */
+}
+.rotate{
+    background-color: #23197e;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  7px 7px 10px;
+    transition: 0.5s;
+
+}
+/* هاور کارت ها  */
+.for-hover:hover .rotate {
+    transition: 0.5s;
+    transform: rotatey(180deg);
+    
+}
+
+/* عکس های بازی های پیشنهادی */
+#bazi-pishnehadi div a figure img{
+    width: 100%;
+    height: 50%;
+}
+#bazi-pishnehadi div a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none; 
+    transition: 2s;
+    overflow: hidden;
+}
+/* توضیحات بازی های پیشنهادی */
+#bazi-pishnehadi div a p{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    overflow: hidden;
+    color:#cfd0bf;
+    display: none;
+}
+/* نام بازی ها */
+#bazi-pishnehadi div a figure{
+    margin-top: 40px;
+    color: #cfd0bf;
+    font-weight: bolder; 
+    font-size: larger;
+}
+#bazi-pishnehadi div:hover a figure{
+    display: none;
+}
+/* متن توضیحات بازی ها با هاور شدن */
+#bazi-pishnehadi div:hover a p{
+    display: block;
+    transform: rotateY(180deg);
+    direction: rtl;
+}
+/* سه گیف تبلیغات */
+#ads{
+    width: 100%;
+    height: 300px;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#ads div{
+    width: 32%;
+    height: 250px;
+}
+#ads div a img{
+    width: 100%;
+    height: 100%;
+}
+/* از این جا به بعد محتوای بازی ها تمام و محتوای مربوط به برنامه شروع میشود */
+#app-pishnehadi{
+    width: 98%;
+    margin: auto;
+    border: solid 1px #808080;
+    border-radius: 7px;
+    border-top: unset;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+/* عکس های برنامه ها  */
+#app-pishnehadi div a figure img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#app-pishnehadi div a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+    transition: 2s;
+    overflow: hidden;
+}
+/* توضیحات برنامه ها */
+#app-pishnehadi div a p{
+  width: 100%;
+  height: 90%;
+  padding: 20px;
+  overflow: hidden;
+  color:#cfd0bf;
+  display: none;
+}
+/* اسم برنامه ها  */
+#app-pishnehadi div a figure{
+    margin-top: 40px;
+    color: #cfd0bf;
+    font-weight: bolder; 
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+#app-pishnehadi div:hover a figure{
+    display: none;
+}
+/* نمایان شدنه توضیحات برنامه ها بعد از هاور شدن */
+#app-pishnehadi div:hover a p{
+    display: block;
+    transform: rotateY(180deg);
+    direction: rtl;
+}
+
+
+
+/* دیزاین انتهای صفحه سایت*/
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: #323a50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#newapplications{
+    width: 32%;
+    height: 100%;
+}
+#newapplications div{
+    width: 230px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+#newapplications > div{
+  float: right;
+}
+#newapplications div h2 { 
+    height: 50px;
+    direction: rtl;
+    color: #c406a3;
+    padding-right: 10px;
+    font-size: 27px;
+}
+#newapplications div img{
+    width: 50px;
+    height: 40px;
+}
+#newapplications a{
+    color: #cfd0bf ;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    transition: 0.3s;
+}
+#newapplications a:hover {
+    /* transition: 0.5s; */
+    background-color: #390d3866;
+}
+#discription{
+    /* border: solid #090859 1px; */
+    width: 32%;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+#discription p{
+    direction: rtl;
+    color:#cfd0bf;
+    white-space : wrap;
+    
+}
+#newgames{
+    /* border: solid #090859 1px; */
+    width: 32%;
+    height: 100%;
+
+}
+#newgames div{
+    width: 210px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* float: right;  */
+}
+#newgames > div{
+  float: right;
+}
+#newgames div h2 { 
+    height: 50px;
+    direction: rtl;
+    padding-right: 30px;
+    color: #c406a3;
+    text-align: center;
+    padding-right: 10px;
+    font-size: 27px;
+}
+#newgames div img{
+    width: 50px;
+    height: 40px;
+}
+#newgames a{
+    color: #cfd0bf ;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    transition: 0.3s;
+}
+#newgames a:hover {
+    /* transition: 0.5s; */
+    background-color: #390d3866;
+}
+#contactlinks{
+    /* border: solid red; */
+    width: 100%;
+    height: 100PX;
+}
+#contactlinks ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 30px;
+    direction: rtl;
+    
+    
+}
+#contactlinks ul li{
+    border: solid #cfd0bf 1px;
+    border-radius: 2px;
+    padding:5px 10px;
+    transition: 0.5s;
+}
+#contactlinks ul li:hover{
+    transition: 0.5s;
+    background-color: rgba(11, 14, 16, 0.267);
+}
+#contactlinks ul li a {
+    color: #cfd0bf;
+}
+
+#go-up{
+  position: fixed;
+  background-color: #4db921;
+  width: 40px;
+  height: 35px;
+  /* line-height: 41px; */
+  padding: 0 5px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  bottom: 100px;
+  right: 0;
+  z-index: 101;
+}
+#go-up a{
+  display: block;
+  width: 100%;
+  height:100%;
+  margin: 3px 0px;
+
+}
+
+/* دیزاین کلی و صفحه اصلی اینجا تمام و زین پس دیزاین صفحات دیگر طراحی میشود */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.menu{
+    /* منوی صفحه های دیگر سایت مثل درخواست اپ و ... */
+    height: 70px;
+    position: sticky ;
+    top: 0 ;
+    border-bottom: solid #2196f3;
+    z-index: 100;
+}
+
+.other-h1{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        float: right;
+        padding: 0px;
+        margin-top: 0px;
+        background-color: unset;
+        border: unset;
+        border-radius: unset;
+        word-spacing: 5px;
+        letter-spacing: 3;
+        margin-right: 7px;
+
+}
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////  */
+
+
+
+/* دیزاین صفحه درخواست اپ */
+
+#discription2{
+    /* پاراگراف صفحه درخواست اپ */
+    margin-top: 10px;
+    width: 80%;
+    height: 200px;
+    margin-left: 300px;
+    /* border: solid 3px red ; */
+}
+#discription2 p { 
+    line-height: 35px;
+    text-align: justify;
+    font-size: large;
+}
+
+#darkhast-form{
+    width: 30%;
+    height: 700px;
+    float: right;
+    margin-right: 15px;
+    /* border: solid red 2px ; */
+    border-radius: 15px;
+    background-color: #23197e;
+    box-shadow: 5px 5px 7px inset;
+}
+
+#darkhast-form p{
+    direction: rtl;
+    margin-top: 35px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #2196f3;
+
+}
+
+#darkhast-form form{
+    width: 100%;
+    float: right;
+
+}
+.form-inputs ,.form-inputs::placeholder{
+    margin-top: 1px;
+    direction: rtl;
+    width: 95%;
+    float: right;
+    background-color: unset;
+    border: none;
+    border-bottom:1px solid;
+    font-size: large;
+    padding: 5px;
+    color: #cfd0bf;
+}
+
+textarea , textarea::placeholder{
+    font-size: large;
+    padding: 5px;
+    direction: rtl;
+    width: 95%;
+    float: right;
+    background-color: unset;
+    border: none;
+    color: #cfd0bf;
+    border-bottom: solid 1px;
+
+}
+#request-button {
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color:  #1563a3;
+    color: #cfd0bf; 
+    transition: 0.5s;
+}
+#request-button:hover{
+    transition: 0.5s;
+    background-color:#2196f3 ;
+}
+#request-img{
+    margin-right: 2%;
+    float: right;
+    width: 45% ;
+    height: 600px;
+    /* border: solid red 2px; */
+}
+#request-img ~ h2{
+  color: #e8eaf0;
+  direction: rtl;
+  font-size: xx-large;
+  margin-right: 20px;
+}
+
+#request-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#soalat-por-tekrar{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    
+}
+#soal1 , #soal2{
+    margin: 15px;
+    background-color: #25055d;
+    height: 45%;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+h3{
+    color: #cfd0bf;
+    direction: rtl;
+}
+
+/* دیزاین صفحه درخواست اپلیکیشن اینجا تمام می شود */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* دیزاین صفحه تماس با ما */
+
+
+
+#contactus-form{
+    /* باکس فرم تماس با ما  */
+    display: block;
+    width: 77%;
+    /* height: 700px; */
+    float: right;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    /* border: solid red 2px ; */
+    border-radius: 15px;
+    background-color: #23197e;
+    box-shadow: 5px 5px 7px inset;
+}
+#contactus-img{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 450px;
+    left: 100px;
+    transform: rotate(-25deg);
+    /* border: solid red 2px; */
+}
+#contactus-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#contactus-form p{
+    /* جمله داخل باکس فرم */
+    direction: rtl;
+    margin-top: 35px;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #2196f3;
+
+}
+
+#contactus-form form{
+    width: 100%;
+    float: right;
+
+}
+.cantactus-input ,.cantactus-input::placeholder{
+    margin-top: 1px;
+    direction: rtl;
+    width: 40%;
+    float: right;
+    background-color: unset;
+    border: none;
+    border-bottom:1px solid;
+    font-size: large;
+    padding: 5px;
+    color: #cfd0bf;
+}
+
+textarea , textarea::placeholder{
+    font-size: large;
+    padding: 5px;
+    direction: rtl;
+    width: 95%;
+    float: right;
+    background-color: unset;
+    border: none;
+    color: #cfd0bf;
+    border-bottom: solid 1px;
+}
+.contactus-button{
+    font-size: 25px;
+    border: solid white 2px !important;
+    margin-top: 330px !important;
+    margin-left: 300px !important;
+    margin-bottom: 50px;
+}
+
+#contactus-links{
+    width: 50%;
+    height: 120px;
+    background-color: #23197e;
+    float: right;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    border-radius: 15px;
+
+}
+#contactus-links ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    border: solid white 2px;
+    border-radius: 10px;
+
+}
+
+#contactus-links ul li{
+  position: relative;
+  right: 25px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  border-radius: 10px;
+  /* border: solid 1px red; */
+
+}
+
+
+#contactus-links ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border: solid red; */
+    
+}
+#contactus-links ul a li:hover{
+    box-shadow: 
+    0 0 15px #008cff,
+    0 0 25px #008cff,
+    0 0 60px #008cff,
+    0 0 130px #008cff;
+}
+
+#contactus-links ul a li img{
+    width: 65px;
+    height: 65px;
+    margin: -13px -13px;
+}
+
+/* دیزاین صفحه ارتباط با ما اینجا به پایان رسید */
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* دیزاین صفحه درباره من  */
+
+#aboutus-main{
+    width: 100%;
+    height: 1200px;
+    background-image: unset;
+}
+#aboutus-h1{
+    font-size: 45px;
+    margin-right: 20px;
+    float: right;
+}
+
+#introdiction-card{
+    width: 20%;
+    height: 100%;
+    background-color: #23197e;
+    border: solid white 2px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 15px;
+}
+#introdiction-card figure img{
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 50%;
+    height: 150px;
+    border: solid #1f0544;
+    border-radius: 50%;
+    /* overflow: hidden; */
+
+}
+
+#introdiction-card figure figcaption{
+    color: #2da1ff;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+#introdiction-card ul{
+    float: right;
+    list-style-type: none;
+    direction: rtl;
+    color: #cfd0bf;
+    padding: 7px;
+}
+#introdiction-card ul li { 
+    padding: 5px;
+}
+
+#aboutus-links ul{
+    width: 25%;
+    height: 640px;
+    margin-right: 5px;
+    list-style-type: none;
+    border: solid white 2px;
+    border-radius: 10px;
+
+}
+
+#aboutus-links ul li a{
+    width: 100%;
+    /* border: solid red;  */
+    display: block;
+    margin-top: 50px;
+}
+#aboutus-links ul li a img{
+    width: 50px;
+    /* border: solid red; */
+}
+
+/* #aboutus-links ul li a img:hover{
+    transform: scale(70px , 70px);
+} */
+
+#aboutus-discription{
+    width: 75%;
+    height: 100%;
+    background-color: #23197e;
+    border: solid #ffffff;
+    border-radius: 10px;
+}
+
+#aboutus-discription p{
+    padding: 10px;
+    font-size: large;
+}
+
+#aboutus-discription p:nth-of-type(2){
+    /* padding: 10px; */
+    font-size: 30px;
+    color: #2da1ff;
+}
+
+
+#aboutus-discription ul{
+    /* float: right; */
+    list-style-type: disc;
+    direction: rtl;
+    color: #cfd0bf;
+    font-size: large;
+    padding-right: 25px;
+}
+#aboutus-discription ul li{
+    padding: 5px;
+}
+#aboutus-discription ul li a{
+    color: #ff00e6 ;
+}
+#aboutus-discription ul li a:hover{
+    text-shadow:
+    0 0 15px #008cff,
+    0 0 25px #008cff,
+    0 0 60px #008cff,
+    0 0 130px #008cff; ;
+}
+#aboutus-discription img{
+    width: 70%;
+    /* float: ; */
+    margin-right: 50px;
+    transform: rotate(45deg);
+}
+#aboutus-footer{
+    margin-top: 400px;
+}
+
+
+/* دیزاین صفحه درباره من اینجا به پایان رسید */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+ 
+
+/* دیزاین صفحه 404 یا خالی  */
+
+#empty-body{
+    background-image: none;
+    background-color: #160436;
+    /* min-height: 723px; */
+}
+#empty-body main{
+    width: auto;
+    height: auto;
+    background-image: none;
+    background-color: #160436 ;
+}
+
+#empty-main img{
+    width: 1500px;
+    height: 600px;
+    margin-left: 20px;
+    /* margin-right: auto; */
+    /* border: solid red; */
+}
+#loed{
+    position: absolute;
+    bottom: 100px;
+    left: 640px;
+    /* border: solid; */
+}
+.loader {
+    --path: #e8eaf0;
+    --dot: #997fee;
+    --duration: 3s;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    right: 0px;
+    
+  }
+  
+  .loader:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    background: var(--dot);
+    top: 37px;
+    left: 19px;
+    transform: translate(-18px, -18px);
+    animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .loader svg rect, .loader svg polygon, .loader svg circle {
+    fill: none;
+    stroke: var(--path);
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+  
+  .loader svg polygon {
+    stroke-dasharray: 145 76 145 76;
+    stroke-dashoffset: 0;
+    animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg rect {
+    stroke-dasharray: 192 64 192 64;
+    stroke-dashoffset: 0;
+    animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader svg circle {
+    stroke-dasharray: 150 50 150 50;
+    stroke-dashoffset: 75;
+    animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  .loader.triangle {
+    width: 48px;
+  }
+  
+  .loader.triangle:before {
+    left: 21px;
+    transform: translate(-10px, -18px);
+    animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  }
+  
+  @keyframes pathTriangle {
+    33% {
+      stroke-dashoffset: 74;
+    }
+  
+    66% {
+      stroke-dashoffset: 147;
+    }
+  
+    100% {
+      stroke-dashoffset: 221;
+    }
+  }
+  
+  @keyframes dotTriangle {
+    33% {
+      transform: translate(0, 0);
+    }
+  
+    66% {
+      transform: translate(10px, -18px);
+    }
+  
+    100% {
+      transform: translate(-10px, -18px);
+    }
+  }
+  
+  @keyframes pathRect {
+    25% {
+      stroke-dashoffset: 64;
+    }
+  
+    50% {
+      stroke-dashoffset: 128;
+    }
+  
+    75% {
+      stroke-dashoffset: 192;
+    }
+  
+    100% {
+      stroke-dashoffset: 256;
+    }
+  }
+  
+  @keyframes dotRect {
+    25% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(18px, -18px);
+    }
+  
+    75% {
+      transform: translate(0, -36px);
+    }
+  
+    100% {
+      transform: translate(-18px, -18px);
+    }
+  }
+  
+  @keyframes pathCircle {
+    25% {
+      stroke-dashoffset: 125;
+    }
+  
+    50% {
+      stroke-dashoffset: 175;
+    }
+  
+    75% {
+      stroke-dashoffset: 225;
+    }
+  
+    100% {
+      stroke-dashoffset: 275;
+    }
+  }
+  
+  .loader {
+    display: inline-block;
+    margin: 0 16px;
+  }
+
+
+  /* دیزاین صفحه 404 اینجا به پایان رسید */
+
+
+  /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+  /* دیزاین صفحه بازی ها  */
+
+  /* دیزاین بازی کلش آف کلنز */
+
+  .other-header{
+    height: 100px;
+    border-bottom: #008cff solid;
+    position: sticky;
+    z-index: 99;
+    top: 0%;
+    /* border: solid red; */
+  }
+  .other-main{
+    background-image: none;
+    background-color: #160436;
+    /* border: solid #cfd0bf 0.5px; */
+    margin-top: 5px;
+    /* border-radius: 5px; */
+  }
+  .other-ads{
+    border: solid #cfd0bf 0.5px;
+    border-radius: 7px;
+  }
+  .other-h1-2{
+    display: inline-block ; 
+    color: #008cff;
+    font-size: 20px;
+    padding: 0px;
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    border-bottom: solid #008cff ;
+    /* margin: 0; */
+    direction: rtl;
+    text-align: right;
+    margin-left: 560px;
+    word-spacing:normal;
+    letter-spacing:normal;
+
+  }
+  #line{
+    margin-top: -2px;
+  }
+  .other-main h3 {
+    text-align: center;
+  }
+  .other-main h3:nth-child(odd){
+    color: #d021be;
+  }
+  .other-main ul , ul li{
+    list-style-position: inside;
+    color: #cfd0bf;
+  }
+  .other-main img{
+    width: 100%;
+  }
+  #download-box{
+    /* height: 200px; */
+    background-color:#23197e ;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+  }
+  #download-box a{
+    background-color: #2196f3;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    word-spacing: 5px;
+    transition: 0.5s;
+  }
+  #download-box a:hover{
+    background-color:#1b7bc9 ;
+  }
+  #other-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    overflow: hidden;
+    /* border: solid red; */
+  }
+  #other-nav a{
+    background-color:#341b63 ;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+  }
+  #other-nav a img{
+    width: 20px;
+    margin-right: 25px;
+    /* background-color: white; */
+    overflow: hidden;
+
+  }
+  #telegram-link{
+    background-color: #1584df !important;
+  }
+  #telegram-link img , #instagram-link img{
+    width: 20px !important;
+  }
+  #instagram-link{
+    background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+#games-pic{
+    background-color: #23197e;
+    border-radius: 15px;
+}
+
+
+  /* دیزاین اسلایدر */
+.other-slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    right: 240px;
+    width: 60%;
+  }
+  
+  .other-slider input[type="radio"] {
+    display: none;
+  }
+  
+  .other-slider label {
+    flex: 1;
+    transition: margin-left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .other-slider input[type="radio"]:checked + label {
+    margin-left: 0;
+    opacity: 1;
+  }
+  
+  .other-slider input[type="radio"]:not(:checked) + label {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  
+  .other-slider img {
+    margin-top: 10px;
+     width: 100%;
+     /* height: 100%; */
+  }
+
+  .candy img{
+    width: 200px;
+    height: 200px !important;
+  }
+  
+  .other-slider-controls {
+    position: absolute;
+    top: 90% ;
+    right: 37%;
+    transform: translateY(-50%);
+    margin-left: 0px;
+    /* border: solid red ; */
+  }
+  
+  .other-slider-controls label {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    opacity: 0.5;
+    transition:  0.5s ease-in-out;
+  }
+  
+  .other-slider-controls label:hover {
+    opacity: 1;
+}
+
+.moshabeh{
+  width: 100%;
+  background-color: #23197e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: scroll;
+
+}
+.moshabeh div{
+  background-color: #160436;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* font-size: 5px; */
+  text-align: center;
+}
+.moshabeh div img{
+  width: 100px;
+  margin: 10px;
+}
+.moshabeh div figcaption{
+  text-align: center;
+}
+.title-box{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.other-form{
+  background-color: #23197e;
+  display: block;
+  justify-content: space-between;
+  border-radius: 15px;
+
+}
+.other-form textarea{
+  background-color: #160436;
+  margin: 20px;
+  width: 40%;
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: none;
+  resize: none;
+  min-height: 300px;
+  border-radius: 10px;
+}
+.other-form #for-flex{
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#for-flex input:not(.submit){
+  background-color: unset;
+  margin : 15px 0px;
+  width: 100%;
+  height: 25px;
+  border: unset;
+  outline: unset;
+  border-bottom: solid 1px;
+  font-size: larger;
+  padding-bottom: 8px;
+  /* border: solid red; */
+
+}
+
+#for-flex select ,#for-flex div{
+  margin: 5px 0px;
+  background-color: #23197e;
+  border: unset;
+  font-size: larger;
+}
+.submit{
+  background-color: #2196f3;
+  font-size: larger;
+  margin: 10px 400px !important;
+  padding: 10px;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.submit:hover{
+  opacity: 1;
+}
+
+.didgah-karbaran{
+  background-color: #23197e;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.didgah-karbaran li {
+  background-color: #160436 ;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sidebar{
+  background-image: linear-gradient(180deg , #d021be , #008cff) ;
+  width: 170px;
+  height: 3300px;
+  position: absolute;
+  margin-right: 7px;
+  top: 250px;
+  border-radius: 15px;
+}
+
+.side-content{
+  width: 100%;
+  position: sticky;
+  z-index: 98;
+  top: 120px;
+}
+
+.side-content img{
+  width: 90% ;
+  margin: 8px; 
+  border-radius: 36px;
+}
+.side-content a{
+  display: flex;
+  background-color: #008cff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.side-content a:hover{
+  box-shadow: #504b4b 1px 1px 2px;
+}
+.side-content a img{
+  width: 30px;
+}
+.type-game{
+  display: flex;
+  width: 100%;
+  justify-content:baseline;
+  flex-wrap: nowrap;
+  /* border-radius: 10px; */
+  align-items: center;
+  font-size: smaller;
+
+
+}
+.type-game img{
+  width: 40px;
+  margin-left: 10px;
+  /* background-color: #008cff; */
+}
+.type-game span strong{
+  font-size:large;
+  color: #000;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////    دیزاین صفحه موبایل    ////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media screen and (min-width : 420px) and (max-width : 525px ) {
+
+  header{
+    background-image: url(pic/header.jpg);
+    background-size: 100cm;
+    background-position: -300px 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    /* position: sticky;
+    top: 0%; */
+    overflow: hidden;
+    /* border: solid yellow; */
+}
+/* منو در بالای هدر سایت */
+#menu{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+/* لوکوی سابت در گوشه سمت راست هدر بالا */
+#logo{
+    width: 18%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #323a50;
+    margin-right: 1%;
+    /* display: none; */
+
+}
+
+#logo a img{
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+
+}
+
+/* لینک های منو در هدر */
+#header-nav{
+    width: 80%;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    direction: ltr;
+    /* display: none; */
+
+}
+/*  لینک عضویت در هدر  */
+#sign{
+    width: 13%;
+    height: 90%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 10px;
+    display: none;
+
+}
+#sign:hover{
+  display: block;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #fff;
+  text-shadow: transparent ;
+  box-shadow: unset;
+  display: flex;
+}
+
+/* منو و ساب منو در موبایل */
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  margin-left: 3%;
+  margin-right: 3%;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+.dropdown {
+  width: 40%;
+  height: 300px;
+	position: fixed;
+  left: 0%;
+  top: 55px;
+  visibility: hidden;
+  z-index: 95;
+  display: block;
+}
+
+.dropdown > .menu {
+	position: absolute;
+	display: grid;
+	width: 100%;
+  height: 100%;
+	border-radius: 6px;
+	transition: 0.3s;
+  background: #23197e ;
+}
+
+.dropdown > .menu > a {
+  direction: rtl;
+	display: flex;
+	align-items: center;
+	color: #f7f7f7;
+	font-size: large;
+  padding: 10px;
+  border-bottom: solid white 1px;
+}
+
+.dropdown > .menu > a:hover {
+	background: rgba(170, 196, 222, 0.267);
+  transition: 0.5s;
+
+}
+.burger input:checked ~ .dropdown{
+  visibility: visible;
+}
+
+.dropdown2 {
+  width: 40%;
+  height: 300px;
+	position: fixed;
+  left: 0%;
+  top: 60px;
+  visibility: hidden;
+  z-index: 102;
+  display:block;
+}
+
+.dropdown2 > .menu {
+	position: absolute;
+	display: grid;
+	width: 100%;
+  height: 100%;
+	border-radius: 6px;
+	transition: 0.3s;
+  background: #23197e ;
+}
+
+.dropdown2 > .menu > a {
+  direction: rtl;
+	display: flex;
+	align-items: center;
+	color: #f7f7f7;
+	font-size: large;
+  padding: 10px;
+  border-bottom: solid white 1px;
+}
+
+.dropdown2 > .menu > a:hover {
+	background: rgba(170, 196, 222, 0.267);
+  transition: 0.5s;
+}
+
+.burger input:checked ~ .dropdown2{
+  visibility: visible;
+}
+
+
+/* اینپوت سرچ در کنار لینک عضویت */
+#search{
+  width: 8%;
+}
+#search input[type=search]{
+    width: 100%;
+    height: 90%;
+    border-radius: 50%;
+    background-image: url(pic/search.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    margin-left: 5%;
+    direction: rtl;
+    outline: unset;
+    /* display: none; */
+
+}
+#search input::placeholder{
+    font-size: 0px;
+    /* display: none; */
+
+}
+/* لینک های وسط هدر  */
+
+#header-list {
+  /* border: solid rgb(4, 128, 0); */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    direction: rtl;
+    display: none;
+
+}
+#header-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 90%;
+    padding: 0.1em 0.50em;
+    border-radius: 0.3em;
+    font-size: 12px;
+    /* border: solid purple; */
+    /* display: none; */
+
+}
+
+#header-list li a { 
+    font-family: "koodak";
+    font-size: 4px;
+    color: #cfd0bf;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+    background-color: #23197e;
+    border-radius: 0.2em;
+    border: 0.08em solid #cfd0bf;
+    box-shadow: 0 0.4em 0.1em 0.019em #cfd0bf;
+    /* display: none; */
+
+}
+#header-list li a:hover{
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+    /* display: none; */
+
+}
+#header-list li a:not(hover){
+    transition: all 1s;
+    /* display: none; */
+
+}
+
+/* آندوس به روز ترین مرجع اندروید و آی او اس */
+h1{
+    display: inline-block;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 25%;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #231979;
+    border: solid #ffffff 2px;
+    border-radius: 7px;
+    word-spacing: 5px;
+    letter-spacing: 3;
+    /* display: none; */
+
+}
+
+/* دیزاین اسلایدر */
+.slider {
+    display: flex;
+    /* overflow: hidden; */
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 57%;
+    /* display: none; */
+
+  }
+  
+  .slider input[type="radio"] {
+    display: none;
+  }
+  
+  .slider label {
+    flex: 1;
+    transition: margin-left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /* display: none; */
+
+  }
+  
+  .slider input[type="radio"]:checked + label {
+    margin-left: 0;
+    opacity: 1;
+    /* display: none; */
+
+  }
+  
+  .slider input[type="radio"]:not(:checked) + label {
+    margin-left: -100%;
+    opacity: 0;
+    /* display: none; */
+
+  }
+  
+  .slider img {
+     width: 100%;
+     height: 100%;
+     /* display: none; */
+
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 90% ;
+    transform: translateY(-50%);
+    margin-left: 35%;
+    /* display: none; */
+
+  }
+  
+  .slider-controls label {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    opacity: 0.5;
+    transition:  0.5s ease-in-out;
+    /* display: none; */
+
+  }
+  
+  .slider-controls label:hover {
+    opacity: 1;
+    /* display: none; */
+
+}
+
+/* از اینجا به بعد محتوای اصلی سابت می باشد */
+main{
+  width: 100%;
+  /* height: 3000px; */
+  background-image: linear-gradient(360deg ,#160436 85%, #88018f  );
+  margin: 0%;
+  margin-bottom: 30px;
+  /* border: solid brown; */
+}
+/* لینک بازی ها و برنامه ها در کنار صفحه با پوزیشن استیکی */
+#menu-side{
+  display: none;
+}
+
+
+/* لینک های بازی های پیشنهادی و آخرین بازی های به روز شده و بازی های رونمایی شده */
+#main-nav1{
+  width: 100%;
+  height: 28px;
+  border-bottom: solid 1px #cfd0bf;
+  
+}
+#main-nav1 div{
+  width: 90% ;
+  float: right;
+  margin-right: 5px;
+}
+
+#main-nav1 div ul{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  direction: rtl;
+}
+
+#main-nav1 div ul a{
+  color: #cfd0bf;
+  text-decoration: none;
+  font-size: 12px;
+}
+#main-nav1 div ul li:first-child{
+  border-bottom: solid #2196f3 2px;
+}
+/* محتوای اصلی سایت در قسمت بازی های پیشنهادی  */
+#bazi-pishnehadi{
+  width: 100%;
+  margin: auto;
+  border: solid 1px #808080;
+  border-radius: 7px;
+  border-top: unset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+/* کارت های معرفی بازی ها  */
+
+.for-hover{
+width: 100% ;
+height: 400px;
+margin: 10px;
+/* border: solid red 2px; */
+}
+.rotate{
+  background-color: #23197e;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:  7px 7px 10px;
+  transition: 0.5s;
+
+}
+/* هاور کارت ها  */
+.for-hover:hover .rotate {
+  transition: 0.5s;
+  transform: unset;
+  /* border: solid gray; */
+  
+}
+
+/* عکس های بازی های پیشنهادی */
+#bazi-pishnehadi div a figure img{
+  width: 40%;
+  position: absolute;
+  top: 7%;
+  left: 1px;
+  height: auto;
+  /* border: solid yellow; */
+}
+#bazi-pishnehadi div a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none; 
+  transition: 2s;
+  overflow: hidden;
+}
+/* توضیحات بازی های پیشنهادی */
+#bazi-pishnehadi div a p{
+  display: block;
+  margin-top: 12%;
+  padding: 0px;
+  /* border: solid yellow; */
+
+}
+/* نام بازی ها */
+#bazi-pishnehadi div a figure{
+  position: relative;
+  margin-top: 0px;
+  color: #cfd0bf;
+  font-weight: bolder; 
+  font-size: larger;
+  /* border: solid yellow; */
+}
+#bazi-pishnehadi div:hover a figure{
+  display: block;
+  /* border: solid red; */
+}
+/* متن توضیحات بازی ها با هاور شدن */
+#bazi-pishnehadi div:hover a p{
+  display: block;
+  transform: unset;
+  direction: rtl;
+  /* border: solid red; */
+
+}
+/* سه گیف تبلیغات */
+#ads{
+  width: 100%;
+  height: 200px;
+  margin:10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#ads div{
+  width: 32%;
+  height: 90%;
+}
+#ads div a img{
+  width: 100%;
+  height: 100%;
+}
+
+/* از این جا به بعد محتوای بازی ها تمام و محتوای مربوط به برنامه شروع میشود */
+#app-pishnehadi{
+  width: 100%;
+  margin: auto;
+  border: solid 1px #808080;
+  border-radius: 7px;
+  border-top: unset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between
+}
+
+/* عکس های برنامه ها  */
+#app-pishnehadi div a figure img{
+  width: 27%;
+  position: absolute;
+  top: 7%;
+  left: 1px;
+  height: auto;
+}
+#app-pishnehadi div a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none; 
+  transition: 2s;
+  overflow: hidden;
+  /* display: none; */
+}
+/* توضیحات برنامه ها */
+#app-pishnehadi div a p{
+width: 100%;
+height: 49%;
+padding: 20px;
+overflow: hidden;
+color:#cfd0bf;
+display: block;
+margin-top: 20%;
+padding: 0px 30px;
+/* border: solid red; */
+
+}
+/* اسم برنامه ها  */
+#app-pishnehadi div a figure{
+  position: relative;
+  margin-top: 0px;
+  color: #cfd0bf;
+  font-weight: bolder; 
+  font-size: larger;
+}
+#app-pishnehadi div:hover a figure{
+  display: block;
+}
+/* نمایان شدنه توضیحات برنامه ها بعد از هاور شدن */
+#app-pishnehadi div:hover a p{
+  display: block;
+  transform: unset;
+  direction: rtl;
+}
+
+/* دیزاین انتهای صفحه سایت*/
+footer{
+  width: 100%;
+  height: 500px;
+  background-color: #323a50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newapplications{
+  /* border: solid #090859 1px; */
+  width: 32%;
+  height: 100%;
+  /* border:  solid yellow; */
+}
+#newapplications div{
+  width: 100%;
+  height: auto;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  float: right;
+  /* border: solid red; */
+  
+}
+#newapplications div h2 { 
+  height: auto;
+  direction: rtl;
+  color: #c406a3;
+  text-align: center;
+  padding-right: 10px;
+  font-size: 100%;
+}
+#newapplications div img{
+  width: 20%;
+  height: auto;
+}
+#newapplications a{
+  color: #cfd0bf ;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  transition: 0.3s;
+  border-bottom:solid #008cff;
+}
+#newapplications a p{
+  font-size: x-small;
+}
+#newapplications a:hover {
+  transition: 0.5s;
+  color: #c406a3 ;
+}
+#discription{
+  /* border: solid #090859 1px; */
+  width: 32%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px;
+}
+#discription p{
+  direction: rtl;
+  color:#cfd0bf;
+  white-space : wrap;
+  font-size: xx-small;
+  
+}
+#newgames{
+  /* border: solid #090859 1px; */
+  width: 32%;
+  height: 100%;
+
+}
+#newgames div{
+  width: 100%;
+  height: auto;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  float: right;
+  
+}
+#newgames div h2 { 
+  padding-right: 10px;
+  height: auto;
+  direction: rtl;
+  color: #c406a3;
+  text-align: center;
+  padding-right: 10px;
+  font-size: 100%;
+}
+#newgames div img{
+  width: 20%;
+  height: auto;
+}
+#newgames a{
+  color: #cfd0bf ;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  transition: 0.3s;
+  border-bottom:solid #008cff;
+}
+#newgames a p{
+  font-size: x-small;
+}
+#newgames a:hover {
+  transition: 0.5s;
+  color: #c406a3 ;
+}
+#contactlinks{
+  /* border: solid red; */
+  width: 100%;
+  height: auto;
+  display: none;
+}
+#contactlinks ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10%;
+  direction: rtl;
+}
+#contactlinks ul li{
+  border: solid #cfd0bf 1px;
+  border-radius: 2px;
+  padding:5px 10px;
+  transition: 0.5s;
+}
+#contactlinks ul li:hover{
+  transition: 0.5s;
+  background-color: rgba(11, 14, 16, 0.267);
+}
+#contactlinks ul li a {
+  color: #cfd0bf;
+  font-size: 5px;
+}
+
+
+/*/////////////////////////  دیزاین صفحه درباره من در موبایل ///////////////////////////*/
+
+
+
+#aboutus-main{
+  width: 100%;
+  /* height: 1200px; */
+  background-image: unset;
+}
+#aboutus-h1{
+  font-size: 45px;
+  margin-right: 20px;
+  float: right;
+}
+
+#introdiction-card{
+  width: 20%;
+  height: 100%;
+  background-color: #23197e;
+  border: solid white 2px;
+  border-radius: 10px;
+  float: right;
+  margin-right: 1%;
+  /* border: solid red; */
+}
+#introdiction-card figure img{
+  margin-left: 25%;
+  margin-top: 20px;
+  width: 50%;
+  height: 50%;
+  border: solid #1f0544;
+  border-radius: 50%;
+  /* overflow: hidden; */
+
+}
+
+#introdiction-card figure figcaption{
+  color: #2da1ff;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+}
+#introdiction-card ul{
+  float: right;
+  list-style-type: none;
+  direction: rtl;
+  color: #cfd0bf;
+  padding: 7px;
+  font-size: x-small;
+}
+#introdiction-card ul li { 
+  padding: 5px;
+}
+
+#aboutus-links ul{
+  width: 80%;
+  height: 640px;
+  margin-right: 8%;
+  list-style-type: none;
+  border: solid white 2px;
+  border-radius: 10px;
+
+}
+
+#aboutus-links ul li a{
+  width: 100%;
+  /* border: solid red;  */
+  display: block;
+  margin-top: 50px;
+}
+#aboutus-links ul li a img{
+  width: 100%;
+  /* border: solid red; */
+}
+
+/* #aboutus-links ul li a img:hover{
+  transform: scale(70px , 70px);
+} */
+
+#aboutus-discription{
+  width: 75%;
+  height: 100%;
+  background-color: #23197e;
+  border: solid #ffffff;
+  border-radius: 10px;
+  margin-left: 2%;
+  overflow: hidden;
+}
+
+#aboutus-discription p{
+  padding: 10px;
+  font-size: small;
+}
+
+#aboutus-discription p:nth-of-type(2){
+  /* padding: 10px; */
+  font-size: x-large;
+  color: #2da1ff;
+}
+
+
+#aboutus-discription ul{
+  /* float: right; */
+  list-style-type: disc;
+  direction: rtl;
+  color: #cfd0bf;
+  font-size: small;
+  padding-right: 2%;
+}
+#aboutus-discription ul li{
+  padding: 5px;
+}
+#aboutus-discription ul li a{
+  color: #ff00e6 ;
+}
+#aboutus-discription ul li a:hover{
+  text-shadow:
+  0 0 15px #008cff,
+  0 0 25px #008cff,
+  0 0 60px #008cff,
+  0 0 130px #008cff; ;
+}
+#aboutus-discription img{
+  width: 150%;
+  /* float: ; */
+  margin-right: 50px;
+  margin-top: 20%;
+  transform: rotate(45deg);
+}
+#aboutus-footer{
+  margin-top: 200px;
+}
+
+
+/* ///////////////////////دیزاین صفحه ارتباط با ما ////////////////////////// */
+
+.other-h1{
+    display: block;
+    color: #fff;
+    font-size: xx-large;
+    text-align: center;
+    float: right;
+    padding: 0px;
+    margin-top: 4%;
+    background-color: unset;
+    border-radius: unset;
+    word-spacing: 5px;
+    letter-spacing: 3;
+    margin-right: 7px;
+  }
+
+#discription2{
+    /* پاراگراف صفحه درخواست اپ */
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    /* border: solid 3px red ; */
+    /* overflow: hidden; */
+}
+#discription2 p { 
+    line-height: normal;
+    text-align: justify;
+    font-size: small;
+    padding: 2%;
+}
+
+
+#contactus-form{
+  /* باکس فرم تماس با ما  */
+  display: block;
+  width: 90%;
+  float: right;
+  margin: 5%;
+  border-radius: 15px;
+  background-color: #23197e;
+  box-shadow: 5px 5px 7px inset;
+  position: relative;
+  /* border: solid red; */
+}
+#contactus-img{
+  position: absolute;
+  width: 100%;
+  height:auto;
+  top: 0px;
+  left: -150px;
+  transform: rotate(-25deg);
+  /* border: solid red 2px; */
+}
+#contactus-img img{
+  width: 100%;
+  height: 100%;
+}
+
+#contactus-form p{
+  /* جمله داخل باکس فرم */
+  direction: rtl;
+  margin-top: 35px;
+  margin-right: 5%;
+  font-size: 20px;
+  color: #2196f3;
+
+}
+
+#contactus-form form{
+  /* border: solid red; */
+  width: auto;
+  float: right;
+
+}
+.cantactus-input ,.cantactus-input::placeholder{
+  margin-top: 1px;
+  direction: rtl;
+  width: auto;
+  float: right;
+  background-color: unset;
+  border: none;
+  border-bottom:1px solid;
+  font-size: large;
+  padding: 5px;
+  color: #cfd0bf;
+}
+
+textarea , textarea::placeholder{
+  font-size: large;
+  padding: 5px;
+  direction: rtl;
+  width: auto;
+  float: right;
+  background-color: unset;
+  border: none;
+  color: #cfd0bf;
+  border-bottom: solid 1px;
+}
+.contactus-button{
+  font-size: 25px;
+  border: solid white 2px !important;
+  margin-top: 50px !important;
+  margin-left: 30px !important;
+  margin-bottom: 50px;
+}
+
+#contactus-links{
+  width: 70%;
+  height: 100px;
+  background-color: #23197e;
+  float: right;
+  margin-bottom: 50px;
+  margin-right: 15%;
+  border-radius: 15px;
+  border: solid white 2px;
+  /* overflow: hidden; */
+
+}
+#contactus-links ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  border: unset;
+  border-radius: 10px;
+
+}
+
+#contactus-links ul li{
+position: relative;
+right: 0px;
+bottom: 0px;
+width: 55px;
+height: auto;
+float: right;
+border-radius: 10px;
+/* border: solid 1px red; */
+
+}
+
+
+#contactus-links ul li a{
+  display: block;
+  width: 100%;
+  height: auto;
+  /* border: solid red; */
+  
+}
+#contactus-links ul a li:hover{
+  box-shadow: 
+  0 0 15px #008cff,
+  0 0 25px #008cff,
+  0 0 60px #008cff,
+  0 0 130px #008cff;
+}
+
+#contactus-links ul li a img{
+  width: 100%;
+  height: auto;
+  margin: 0px 0px;
+}
+
+/* ///////////////////////////////////  دیزاین صفحه درخواست اپ در موبایل ///////////////////////////// */
+
+#sendapp-h1{
+  font-size: 28px;
+}
+
+
+#darkhast-form{
+  /* display: block; */
+  width: 90%;
+  float: right;
+  margin: 0% 5%;
+  border-radius: 15px;
+  background-color: #23197e;
+  box-shadow: 5px 5px 7px inset;
+  /* position: relative; */
+  /* border: solid red 2px ; */
+}
+
+#darkhast-form p{
+  direction: rtl;
+  margin-top: 35px;
+  margin-right: 5%;
+  font-size: 20px;
+  color: #2196f3;
+
+}
+
+#darkhast-form form{
+  display: block;
+  width: auto;
+  float: unset;
+
+}
+.form-inputs ,.form-inputs::placeholder{
+  margin-top: 1px;
+  direction: rtl;
+  width:auto;
+  float: right;
+  background-color: unset;
+  border: none;
+  border-bottom:1px solid;
+  font-size: large;
+  padding: 5px;
+  color: #cfd0bf;
+}
+
+#request-button {
+  font-size: 15px;
+  margin-top: 50px;
+  margin-left: 300px !important;
+  margin-bottom: 0px;
+  border: solid white 2px !important;
+}
+#request-button:hover{
+  transition: 0.5s;
+  background-color:#2196f3 ;
+}
+#request-img{
+  position: absolute;
+  margin-right: 2%;
+  float: right;
+  width: 50% ;
+  height: auto;
+  top: 100%;
+  left: 10%;
+  /* border: solid red 2px; */
+}
+
+#request-img img{
+  width: 100%;
+  height: 100%;
+}
+
+#soalat-por-tekrar{
+  padding: 10px;
+  width: 100%;
+  height: 500px;
+  
+}
+
+h2{
+  color: #cfd0bf;
+  direction: rtl;
+  margin-right: 3%;
+
+}
+
+#soal1 , #soal2{
+  margin: 0px;
+  margin-bottom: 30px;
+  background-color: #25055d;
+  height: 44%;
+  border-radius: 12px;
+  padding: 10px;
+  /* border: solid red; */
+  overflow: hidden;
+}
+
+
+h3{
+  color: #008cff;
+  direction: rtl;
+}
+
+
+
+/* /////////////////////////////////////// دیزاین صفحه بازی ها در موبایل /////////////////////////////////////////////*/
+
+ .other-header{
+    width: 100% ;
+    height: 60px;
+    position: sticky;
+    top: 0%;
+    z-index: 97;
+    /* border: solid red; */
+  }
+  .other-main{
+    background-image: none;
+    background-color: #160436;
+    /* border: solid #cfd0bf 0.5px; */
+    margin-top: 5px;
+    /* border-radius: 5px; */
+  }
+  .other-ads{
+    border: solid #cfd0bf 0.5px;
+    border-radius: 7px;
+  }
+  .other-h1-2{
+    display: inline-block ; 
+    color: #008cff;
+    font-size: 20px;
+    padding: 0px;
+    background-color: unset;
+    border: unset;
+    border-radius: unset;
+    border-bottom: solid #008cff ;
+    margin-top: 130px;
+    direction: rtl;
+    text-align: right;
+    margin-left: 0px;
+    word-spacing:normal;
+    letter-spacing:normal;
+    /* display: none; */
+
+  }
+  #line{
+    margin-top: -2px;
+  }
+  .other-main h3 {
+    text-align: center;
+  }
+  .other-main h3:nth-child(odd){
+    color: #d021be;
+  }
+  .other-main ul , ul li{
+    list-style-position: inside;
+    color: #cfd0bf;
+    padding: 7px;
+  }
+  .other-main p {
+    padding: 7px;
+  }
+  .other-main img{
+    width: 100%;
+  }
+  #download-box{
+    /* height: 200px; */
+    background-color:#23197e ;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+  }
+  #download-box a{
+    background-color: #2196f3;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    word-spacing: 5px;
+    transition: 0.5s;
+  }
+  #download-box a:hover{
+    background-color:#1b7bc9 ;
+  }
+  #other-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    overflow: hidden;
+    /* border: solid red; */
+  }
+  #other-nav a{
+    width: 18%;
+    background-color:#341b63 ;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    font-size: x-small;
+    /* overflow: hidden; */
+    text-align: center;
+  }
+  #other-nav a img{
+    display: none;
+  }
+  #telegram-link{
+    background-color: #1584df !important;
+  }
+  #telegram-link img , #instagram-link img{
+    width: 20px !important;
+    display: none;
+  }
+  #instagram-link{
+    background: linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+  #games-pic{
+    background-color: #23197e;
+    border-radius: 15px;
+    /* border:  solid red; */
+  }
+
+
+  /* دیزاین اسلایدر */
+.other-slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    right: 20%;
+    width: 60%;
+    /* display: none; */
+  }
+  
+  .other-slider input[type="radio"] {
+    display: none;
+  }
+  
+  .other-slider label {
+    flex: 1;
+    transition: margin-left 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .other-slider input[type="radio"]:checked + label {
+    margin-left: 0;
+    opacity: 1;
+  }
+  
+  .other-slider input[type="radio"]:not(:checked) + label {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  
+  .other-slider img {
+    margin-top: 10px;
+     width: 100%;
+     /* height: 100%; */
+  }
+
+  .candy img{
+    width: 200px;
+    height: 200px !important;
+  }
+  
+  .other-slider-controls {
+    position: absolute;
+    top: 90% ;
+    right: 10%;
+    transform: translateY(-50%);
+    margin-left: 0px;
+    background-color: rgba(7, 56, 154, 0.267);
+  }
+  
+  .other-slider-controls label {
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    margin: 7px;
+    opacity: 0.8;
+    transition:  0.5s ease-in-out;
+  }
+  
+  .other-slider-controls label:hover {
+    opacity: 1;
+}
+
+.moshabeh{
+  width: 100%;
+  background-color: #23197e;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow: scroll;
+
+}
+.moshabeh div{
+  background-color: #160436;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* font-size: 5px; */
+  text-align: center;
+}
+.moshabeh div img{
+  width: 100px;
+  margin: 10px;
+}
+.moshabeh div figcaption{
+  text-align: center;
+}
+.title-box{
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.other-form{
+  background-color: #23197e;
+  display: block;
+  justify-content: space-between;
+  border-radius: 15px;
+
+}
+.other-form textarea{
+  background-color: #160436;
+  margin: 20px;
+  width: 40%;
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  outline: none;
+  resize: none;
+  min-height: 300px;
+  border-radius: 10px;
+}
+.other-form #for-flex{
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#for-flex input:not(.submit){
+  background-color: unset;
+  margin : 15px 0px;
+  width: 100%;
+  height: 25px;
+  border: unset;
+  outline: unset;
+  border-bottom: solid 1px;
+  font-size: larger;
+  padding-bottom: 8px;
+  /* border: solid red; */
+
+}
+
+#for-flex select ,#for-flex div{
+  margin: 5px 0px;
+  background-color: #23197e;
+  border: unset;
+  font-size: larger;
+}
+.submit{
+  background-color: #2196f3;
+  font-size: larger;
+  margin: 10px 400px !important;
+  padding: 10px;
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: none;
+}
+.submit:hover{
+  opacity: 1;
+}
+
+.didgah-karbaran{
+  background-color: #23197e;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.didgah-karbaran li {
+  background-color: #160436 ;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.sidebar{
+  background-image: linear-gradient(180deg , #d021be , #008cff) ;
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  margin-right: 0px;
+  top: 270px;
+  border-radius: 15px;
+}
+
+.side-content{
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0px;
+  z-index: 96;
+}
+
+.side-content > img{
+  width: 20% !important ;
+  margin: 0px;
+  border-radius: 36px;
+  position: relative ;
+  left : 0px !important;
+}
+.side-content a{
+  display: flex;
+  background-color: #008cff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 0px;
+  border-radius: 10px;
+  font-size: small;
+  transition: 0.3s;
+  width: 20%;
+  height: 40%;
+}
+.side-content a:hover{
+  box-shadow: #504b4b 1px 1px 2px;
+}
+.side-content a img{
+  width: 30%;
+}
+.type-game{
+  display: flex;
+  width: 10%;
+  justify-content: center ;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* border-radius: 10px; */
+  align-items: center;
+  font-size: smaller;
+  /* border: solid red; */
+
+}
+.type-game img{
+  width: 40%;
+  margin-left: 0px;
+  /* background-color: #008cff; */
+}
+
+.type-game span{
+  font-size: x-small;
+  text-align: center;
+}
+.type-game span strong{
+  font-size: x-small;
+  color: #000;
+}
+
+
+
+/* /////////////////////////////////  دیزاین صفحه خالی در موبایل     ///////////////////////////////////////////////*/
+
+
+#empty-main img{
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+
+}
+#loed{
+  position: absolute;
+  bottom: 100px;
+  left: 27%;
+}
+
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
