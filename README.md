@@ -1,6 +1,6 @@
 
 # ANDOS website is my first project with pure HTML and CSS . 
-Hello . I am a witness and I hope you will take a look at this project of mine.
+Hello . I am a Shahed and I hope you will take a look at this project of mine.
 This site offers apps and games for Android and IOS.
 The main idea of ​​this project was inspired by the site farsroid.ir, but I tried to change the design and color palette of the site as much as I could.
 The content language of this project is Farsi and English has not been added yet.
